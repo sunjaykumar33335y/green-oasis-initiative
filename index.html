@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Home Monitoring</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Smart Home Monitoring</h1>
+  <div id="status">
+    <p>Temperature: <span id="temp">Loading...</span>°C</p>
+    <p>Humidity: <span id="humidity">Loading...</span>%</p>
+    <p>Motion: <span id="motion">Inactive</span></p>
+  </div>
+  <div id="controls">
+    <button onclick="toggleLight()">Toggle Light</button>
+    <button onclick="adjustTemp()">Adjust Temperature</button>
+  </div>
+  <div id="alerts"></div>
+  <script src="script.js"></script>
+</body>
+</html>
